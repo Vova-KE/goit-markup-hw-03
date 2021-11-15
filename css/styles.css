@@ -247,7 +247,7 @@ ul {
 .work-list {
   /* background-color: brown; */
   display: flex;
-  margin-left: 30px;
+  margin-left: -30px;
   margin-bottom: -30px;
   padding-bottom: 94px;
 }
@@ -400,7 +400,6 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
-  border-style: none;
 }
 
 .potrfolio-buttons:hover,
@@ -408,7 +407,7 @@ ul {
 .potrfolio-buttons:active {
   color: var(--other-text-color);
   background-color: var(--other-bcg-color);
-  border-style: none;
+  outline: none;
 }
 
 .filter-title {
