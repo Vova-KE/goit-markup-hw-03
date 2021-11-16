@@ -75,6 +75,7 @@ ul {
 .address-bottom-map:focus,
 .address-bottom-map:active {
   color: var(--accent-color);
+  outline: none;
 }
 
 /*----------------хедер----------------------*/
@@ -116,12 +117,15 @@ ul {
   text-align: left;
 }
 
+.header-section {
+  border-bottom: 1px solid #ececec;
+}
+
 .header.container {
   /* background-color: violet; */
   height: 80px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-list {
@@ -141,10 +145,13 @@ ul {
 
 /*----------------главный раздел----------------------*/
 
+.hero.section {
+  background-color: var(--section-color);
+}
+
 .hero-container {
   height: 600px;
   text-align: center;
-  background-color: var(--section-color);
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
@@ -215,11 +222,14 @@ ul {
   margin: -1px;
 }
 
+.property.section {
+  padding-top: 94px;
+}
+
 .property-list {
   display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
-  padding-top: 94px;
 }
 
 .property-item-list {
@@ -228,11 +238,16 @@ ul {
   margin-bottom: 30px;
 }
 
-.property-list:first-child {
+/* .property-list:first-child {
   margin-left: 0;
-}
+} */
 
 /*----------------занимаемся----------------------*/
+
+.work.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .work-title {
   color: var(--main-text-color);
@@ -241,7 +256,6 @@ ul {
   line-height: 1.17;
   letter-spacing: var(--main-letter-spacing);
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .work-list {
@@ -249,7 +263,6 @@ ul {
   display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
-  padding-bottom: 94px;
 }
 
 .work-list-item {
@@ -282,8 +295,7 @@ ul {
   letter-spacing: var(--main-letter-spacing);
   text-align: center;
   font-family: Roboto;
-  padding-top: 94px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -304,15 +316,16 @@ ul {
   text-align: center;
   margin-top: 10px;
 }
-.team {
+.team.section {
   background-color: #f5f4fa;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-list {
   display: flex;
   margin-left: -30px;
   margin-bottom: -30px;
-  padding-bottom: 94px;
   border-top: 94px;
   /* background-color: brown; */
 }
@@ -332,14 +345,15 @@ ul {
   background-color: var(--body-main-color);
   padding-bottom: 30px;
 }
-.team-list:first-child {
+/* .team-list:first-child {
   margin-left: 0;
-}
+} */
 
 /*----------------футер----------------------*/
-.footer-section.container {
-  height: 252px;
+.footer-section {
   background-color: var(--section-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .first-bottom-logo,
@@ -375,17 +389,15 @@ ul {
 }
 
 .footer-logo {
-  /* padding-left: 215px; */
-  padding-top: 60px;
   width: 145px;
 }
 
 .address-bottom {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
-.address-list {
-  padding-inline-start: 0;
+.address-list-item:not(:first-child) {
+  margin-top: 9px;
 }
 /*----------------портфолио----------------------*/
 
@@ -400,6 +412,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
   font-family: inherit;
+  padding: 6px 22px;
 }
 
 .potrfolio-buttons:hover,
@@ -417,6 +430,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 .filter-item {
@@ -429,11 +443,18 @@ ul {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  width: 611px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.buttons-list-item {
+  margin-right: 8px;
+}
+
+.buttons-list-item:last-child {
+  margin-right: 0;
 }
 
 .card {
@@ -456,7 +477,7 @@ ul {
   height: auto;
 }
 
-.filter-title {
+/* .filter-title {
   padding-top: 20px;
   padding-left: 24px;
 }
@@ -465,9 +486,10 @@ ul {
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 24px;
-}
+} */
 
 .border-item {
   border: 1px solid #eeeeee;
   border-top: none;
+  padding: 20px 24px;
 }
